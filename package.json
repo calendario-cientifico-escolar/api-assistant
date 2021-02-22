@@ -1,0 +1,21 @@
+{
+  "name": "calendario-cientifico-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server-local.js",
+  "scripts": {
+    "build": "netlify-lambda build express",
+    "start": "nodemon server-local.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@assistant/conversation": "^3.0.0",
+    "body-parser": "^1.19.0",
+    "encoding": "^0.1.13",
+    "express": "^4.17.1",
+    "netlify-lambda": "^1.6.3",
+    "node-fetch": "^2.6.1",
+    "serverless-http": "^2.3.0"
+  }
+}

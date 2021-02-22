@@ -24,8 +24,7 @@ async function start_scene_initial_prompt( conv){
     const response = await fetch(url, { method: "Get" });
     const json = await response.json()  
     
-    const wasYear = json.title.slice(-4)
-    const diff = year -wasYear
+    const diff = year - json.eventYear
     
     const intro = lang === 'es' ? `Tal día como hoy, hace ${diff} años, el ` : `${diff} years ago, in `
     const title = `<p><s>${json.title}</s></p>`

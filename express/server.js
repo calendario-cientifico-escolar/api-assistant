@@ -19,7 +19,7 @@ async function start_scene_initial_prompt( conv){
     const year = today.getFullYear();
     const month = today.getMonth()+1;
     const day = today.getDate();
-    const url = `https://calendario-cientifico-escolar.github.io/data/json/${lang}/${year}/${month}/${day}.json`;
+    const url = `https://calendario-cientifico-escolar.gitlab.io/data/json/${lang}/${year}/${month}/${day}.json`;
 
     const response = await fetch(url, { method: "Get" });
     const json = await response.json()  
